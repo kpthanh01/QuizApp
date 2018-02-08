@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ThinkfulQuizApp.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="ThinkfulQuizApp.js"></script>
+</head>
+<body>
+   
+	<header role=“banner”>
+		<h1>QuizTronic</h1>
+	</header>
+	
+	<main role=”main”>
+		<section id="startPage" role="contentinfo" class="intro"></section>
+		<section id="questionPage" role="contentinfo" class="qcontent hide">
+			<p class="status">Score: <span id="score">0</span></p>
+			<form id="quizForm">
+				<legend>Question <span id="qNum">1</span>:</legend>
+
+					<p id="question"></p>
+					<input type="radio" name="answer" id="ans0" value="0" required>1) 
+					<label for="ans0">Answer 1</label>
+					<br>
+					<input type="radio" name="answer" id="ans1" value="1">2) 
+					<label for="ans1">Answer 2</label>
+					<br>
+					<input type="radio" name="answer" id="ans2" value="2">3) 
+					<label for="ans2">Answer 3</label>
+					<br>
+					<input type="radio" name="answer" id="ans3" value="3">4) 
+					<label for="ans3">Answer 4</label>
+					<div class="nav-comments">
+						<p id="correction"></p>
+						<button type="submit" class="button" id="submit-button">Submit</button>
+						<button type="button" class="button" id="next-button">Next</button>
+					</div>
+
+			</form>
+		</section>
+		<section id="finalScore" role="contentinfo" class="score"></section>
+	</main>
+	
+	<footer role="contentinfo">
+    <div id="copyright">Copyright &copy; 2018, Kevin Thanh Pham</div> 
+	</footer>
+	
+</body>c
+</html>

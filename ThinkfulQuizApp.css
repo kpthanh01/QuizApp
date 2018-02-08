@@ -1,0 +1,126 @@
+html, 
+body{
+  height: 100%;
+}
+html,
+body,
+h1,
+section,
+p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url("https://www.climbing.com/.image/t_share/MTM3NjAyMTE5NTQ4MDE5OTU0/burr102411-024jpg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1, footer{
+  text-align: center;
+}
+header, main, footer{
+  padding: 20px;
+}
+main{
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.intro, .qcontent, .score{
+  border: 3px solid black;
+  background-color: white;
+}
+section{
+  width: 100%;
+  flex: 1;
+}
+section:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.introduction{
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+form{
+  margin-top: 10px;
+}
+legend{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#question{
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.nav-comments{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-comments button{
+  margin-top: 5px;
+}
+#correction{
+	color: blue;
+}
+section:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score p{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#start, #restart{
+	font-size: 15px;
+	padding: 5px;
+	box-shadow: 2px 3px;
+}
+.hide{
+  display: none;
+}
+
+@media screen and (min-width: 700px){
+  header{
+    font-size: 40px;
+  }
+  main{
+    max-width: 650px;
+    margin: auto;
+  }
+  .intro, .qcontent, .score{
+    width: 630px;
+  }
+  .introduction{
+    font-size: 20px;
+  }
+  form{
+    width: 600px;
+  }
+}
+
